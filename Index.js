@@ -18,7 +18,6 @@ const addInformation = (information) => {
 }
 
 // Find Information
-
 const findInformation = (name) => {
 
   // making case insensitive
@@ -33,7 +32,6 @@ const findInformation = (name) => {
 }
 
 // List Information
-
 const listInformation = () => {
     Information.find()
                .then(information => {
@@ -44,7 +42,6 @@ const listInformation = () => {
 }
 
 // Update Information
-
 const updateInformation = (_id,information) => {
     Information.update({_id},information)
                .then(information => {
@@ -54,7 +51,6 @@ const updateInformation = (_id,information) => {
 }
 
 // Remove Information
-
 const removeInformation = (_id) => {
     Information.remove({_id})
                .then(information => {
@@ -62,7 +58,6 @@ const removeInformation = (_id) => {
                  db.close();
                });
 }
-
 
 module.exports = {
     addInformation,
